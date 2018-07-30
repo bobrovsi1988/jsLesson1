@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS work</title>
+    <link href="style.css" rel="stylesheet">
+    <script type="text/javascript">
+        var link= "index2.html"
+        function chooseBacground(){
+            var header = document.querySelector("header");
+            return header.style.backgroundColor = "red";
+        }
+        function deleteHTML(){
+            return document.body.innerHTML = "";
+        }
+        function pastHTML(){
+            deleteHTML();
+            var foo=
+                    '<div> <div class="row"><div class="green ">1</div><div class="yellow">2</div><div class="yellow">3</div><div class="yellow">4</div><div class="yellow">5</div><div class="yellow">6</div><div class="yellow">7</div><div class="yellow last">8</div></div></div><div class="end row green">9</div>' ;
+
+            return document.body.innerHTML = foo;
+        }
+
+
+    </script>
+</head>
+<body>
+<header>
+    <h1>This is second task</h1>
+</header>
+    <button onclick="window.location='https://google.com';">FIRST</button>
+    <button onclick="chooseBacground();">SECOND</button>
+    <button onclick="pastHTML()">THIRD</button>
+</body>
+</html>
